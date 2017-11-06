@@ -1,0 +1,25 @@
+<html>
+<body>
+<h3>form get请求</h3>
+<form action="/process_get" method="GET">
+First Name: <input type="text" name="first_name">  <br>
+ 
+Last Name: <input type="text" name="last_name">
+<input type="submit" value="Submit">
+</form>
+<h3>form post 请求</h3>
+<form action="/process_post" method="POST">
+First Name: <input type="text" name="first_name">  <br>
+ 
+Last Name: <input type="text" name="last_name">
+<input type="submit" value="Submit">
+</form>
+<h3>文件上传：</h3>
+选择一个文件上传: <br />
+<form action="/file_upload" method="post" enctype="multipart/form-data">
+<input type="file" name="image" size="50" />
+<br />
+<input type="submit" value="上传文件" />
+</form>
+</body>
+</html>
